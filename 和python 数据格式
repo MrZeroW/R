@@ -1,0 +1,36 @@
+代码简单
+
+R
+
+library(feather) 
+path <- "my_data.feather" 
+write_feather(df, path) 
+df <- read_feather(path)
+
+Python
+
+import feather 
+path = 'my_data.feather' 
+feather.write_dataframe(df, path) 
+df = feather.read_dataframe(path)
+
+
+
+library(feather) 
+
+x <- runif(1e7) 
+x[sample(1e7, 1e6)] <- NA # 10% NAs 
+df <- as.data.frame(replicate(10, x)) 
+
+
+安装
+
+R
+
+devtools::install_github("wesm/feather/R")
+1
+Python
+
+ pip install feather-format
+1
+Feature速度快，但是还处在开发阶段，官方认为暂时不适合长期存储数据，而且不能保证不同版本的兼容性。 但是可以用于R和Python的交互，也是相当相当棒了。
