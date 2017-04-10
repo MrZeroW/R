@@ -1,0 +1,3 @@
+使用names函数可以查看列名
+>>names(df)
+http://www.cnblogs.com/studyzy/p/4316118.html
