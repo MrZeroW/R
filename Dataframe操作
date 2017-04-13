@@ -5,3 +5,6 @@ http://www.cnblogs.com/studyzy/p/4316118.html
 ISI <- array(, c(length(rows), length(cols)))
 names(ISI) <- c(,,,,,,,,,)
 ISI[,,,] <- ,,,,
+
+保存数据
+write.table(ISI, 'ISI.CSV')
