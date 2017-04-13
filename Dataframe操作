@@ -1,3 +1,7 @@
 使用names函数可以查看列名
 >>names(df)
 http://www.cnblogs.com/studyzy/p/4316118.html
+建立数据框时 ，可以先建立矩阵，列名，再给每列赋值
+ISI <- array(, c(length(rows), length(cols)))
+names(ISI) <- c(,,,,,,,,,)
+ISI[,,,] <- ,,,,
