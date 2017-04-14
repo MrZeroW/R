@@ -7,3 +7,9 @@ http://blog.csdn.net/fanfanrenrenmi/article/details/52222728
 
 lm检验，检验随机效应
 LM检验方法是自相关检验的一种方法,原假设是：对于给定阶数，残差不具有序列相关。
+pbgtest(form,data=rankData,model="within")#LM检验,随机效应模型检验
+LM检验结果表明（p值为0.000），在混合回归与随机效应模型之间，应选择随机效应模型；
+
+最后就是Hbusman检验 fe 还是 re
+拒绝选FE ，不拒绝就是RE
+phtest(form,data=rankData)##Hausman检验判断应该采用何种模型,随机效应模型检验
