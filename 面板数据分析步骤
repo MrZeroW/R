@@ -1,1 +1,9 @@
 http://blog.csdn.net/fanfanrenrenmi/article/details/52222728
+
+#检验个体间是否有差异 pooltest
+若存在 固定效应模型 fe<-plm(form,data=rankData,effect="twoways",model="within")#存在两种效应的固定效应模型
+再与混合比较   pooltest(pool,fe)#F检验判断混合模型与固定效应模型比较
+若存在明显不同，则舍弃混合模型
+
+lm检验，检验随机效应
+LM检验方法是自相关检验的一种方法,原假设是：对于给定阶数，残差不具有序列相关。
